@@ -86,23 +86,6 @@ Para probar localmente el build de producción:
 npm run preview
 ```
 
-## Pruebas y Validación
-
-### Lint del código
-
-Para verificar la calidad del código y encontrar problemas potenciales:
-
-```bash
-npm run lint
-```
-
-Este comando ejecuta ESLint para verificar la adherencia a los estándares de código configurados. Se verifica:
-
-- Sintaxis correcta
-- Uso correcto de React hooks
-- Código muerto o imports no utilizados
-- Cumplimiento de convenciones de código
-
 ## Estructura del Proyecto
 
 ```
@@ -155,54 +138,6 @@ cinema-flix-spa/
 | `/search?query=...` | Página de búsqueda - Resultados de búsqueda por título |
 | `*` | Página 404 - Para rutas no encontradas |
 
-## Desarrollo
-
-### Convenciones de código
-
-- **TypeScript**: Se utiliza TypeScript estricto para mayor seguridad de tipos
-- **Componentes funcionales**: Se utilizan exclusivamente componentes funcionales con hooks
-- **Nombres**: Los componentes usan PascalCase y los archivos tienen la extensión `.tsx`
-- **Estilos**: Se utiliza CSS puro con modularidad
-
-### Workflow típico
-
-1. Crear una rama para tu feature: `git checkout -b feature/mi-feature`
-2. Hacer cambios y verificar con lint: `npm run lint`
-3. Ejecutar en desarrollo: `npm run dev`
-4. Hacer commit: `git commit -am "Descripción de cambios"`
-5. Hacer push: `git push origin feature/mi-feature`
-
-## Solución de Problemas
-
-### El servidor de desarrollo no inicia
-
-- Verifica que Node.js esté correctamente instalado: `node --version`
-- Elimina `node_modules` y reinstala: `rm -rf node_modules && npm install`
-
-### Error de API key no válida
-
-- Verifica que el archivo `.env` exista en la raíz del proyecto
-- Comprueba que tu API key de TMDB sea correcta
-- Asegúrate de que tu cuenta en TMDB tenga acceso a la API
-
-### Cambios en el editor no se reflejan
-
-- Vite debería hacer hot reload automáticamente
-- Si no funciona, recarga la página manualmente con `F5`
-
-## Contribución
-
-Si deseas contribuir al proyecto:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature
-3. Haz commit de tus cambios
-4. Asegúrate de pasar el lint: `npm run lint`
-5. Haz push y abre un Pull Request
-
-## Licencia
-
-Este proyecto está disponible bajo la licencia MIT.
 
 ## Recursos Útiles
 
